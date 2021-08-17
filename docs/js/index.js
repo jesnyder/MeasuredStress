@@ -31,17 +31,12 @@ function csvToSeries(text) {
 	];
 }
 
-function renderChart(series){
+function renderChart(series) {
 	JSC.Chart('chartDiv', {
-		title_label_text: 'Life Expectancy in the United States',
-		annotations: [{
-			label_text: 'Source: National Center for Health Statistics',
-			position: 'bottom left'
-		}],
-        legend_visible: false,
-		defaultSeries_lastPoint_label_text: '<b>%seriesName</b>',
-		defaultPoint_tooltip: '%seriesName <b>%yValue</b> years',
-		xAxis_crosshair_enabled: true,
 		series: series
 	});
 }
+
+
+
+

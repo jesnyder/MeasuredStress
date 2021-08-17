@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Read CSV</title>
+  <script type="text/javascript" src="papaparse.min.js"></script>
+</head>
+<body>
+  <input type="file" id="upload-csv" accept=".csv">
+  <button id="btn-upload-csv">Read CSV</button>
+  <table id="tbl-data"></table>
+
+  <script type="text/javascript">
+    let btn-upload = document.getelementById('btn-upload-csv').addEventListener('click', ()=> {
+      console.log('the button is clicked');
+    });
+</body>
+
+</html>
