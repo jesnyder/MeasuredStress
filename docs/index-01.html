@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <metahttp-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Measured Stress</title>
+</head>
+<body>
+
+  <div>
+    <h1> <center> Measured Stress </center> </h1>
+    <center>
+    <p> Jessica E. Snyder <br /> August 2021 </p>
+    <p> Welcome. </p>
+    </center>
+  </div>
+
+  <img src="" id="rainbow" />
+
+  <script>
+  console.log('about to fetch a rainbow');
+  fetch('rainbow.jpg').then(response => {
+    console.log(response);
+    return response.blob();
+  }).then(blob => {
+    console.log(blob);
+    document.getElementById('rainbow').src = URL.createObjectUrl(blob);
+  });
+  </script>
+
+<script>
+  // Tutorial: https://uufishtxl.github.io/js_api_fetch_csv.html#step-1-load-a-local-csv-file
+  // Data from: https://data.giss.nasa.gov/gistemp/
+  // Mean from:
+
+  getData()
+
+  async function getData() {
+    const response = await fetch('test.csv');
+    const data = await response.text();
+    console.log(data);
+  }
+</script>
+
+
+</body>
+
+
+
+<script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+<script src="../javascript/attempt01.js"></script>
+
+
+</html>

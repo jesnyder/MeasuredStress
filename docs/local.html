@@ -1,0 +1,13 @@
+<html>
+<head>
+<script>
+function readfile() {
+    alert(document.getElementById('iframe').contentDocument.body.firstChild.innerHTML);
+}
+</script>
+</head>
+<body>
+<iframe id='iframe' src = 'test.csv' onload='readfile()'> </iframe>
+<h1>Hello World!</h1>
+</body>
+</html>
