@@ -23,8 +23,6 @@ dataAsJson.forEach(function (row) {
 	console.log(row)
 	console.log(row[1])
 
-
-
 	if (row[1] < 10000){
 	meas.push({x: inc, y: row[0]});
 	inc = inc+1;
@@ -37,7 +35,7 @@ console.log(meas)
 
 return [
 	{name: 'Meas', points: meas},
-	{name: 'Female', points: female}
+	{name: 'Meas 2', points: meas}
 ];
 }
 
