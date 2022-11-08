@@ -1,0 +1,81 @@
+* {
+    font-family: sans-serif;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#app canvas {
+  border-right: 1px solid #aaaaaa40;
+  border-bottom: 1px solid #aaaaaa40;
+  background-image:
+  linear-gradient(#aaaaaa40 1px, transparent 0),
+  linear-gradient(90deg, #aaaaaa40 1px, transparent 0),
+  linear-gradient(#aaa 1px, transparent 0),
+  linear-gradient(90deg, #aaa 1px, transparent 0);
+  background-size: 10px 10px, 10px 10px, 50px 50px, 50px 50px;
+}
+
+
+.navbar {
+    display: flex;
+
+/* This is used to make the navbar sticky, So that the
+    navbar stays at the top part even if we scroll */
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+
+/*it specifies the mouse cursor to be displayed
+    when it is pointed over the element */
+    cursor: pointer;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: black;
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.4) url(
+"https://media.geeksforgeeks.org/wp-content/uploads/20201215124609/Capture-300x14.PNG");
+    background-blend-mode: darken;
+    background-size: cover;
+}
