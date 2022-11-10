@@ -5,9 +5,19 @@
 
   <!-- https://codepen.io/EvyatarDa/pen/waKXMd -->
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+        canvas {
+          width: 250px;
+          height: 250px;
+          background-color: yellow;
+          display: inline-block;
+        }
+  </style>
+
 </header>
 
-<div class="container red topBotomBordersOut" height="10">
+<div class="container gray topBotomBordersOut" height="10">
   <a href="index.html">MEASURING STRESS</a>
   <a href="about/">ABOUT</a>
   <a href="data/">DATA</a>
@@ -15,18 +25,46 @@
   <a href="join/">JOIN</a>
 </div>
 <br><br><br>
+<br>
 
 
 <body>
-
   <script src="js/draw.js"></script>
+  <script src="js/draw2.js"></script>
 
-  <body onload="draw();">
+  <div style="display:inline-block; text-align:left; width:100%; margin-left:3%;  max-width:900px;">
 
-  <br><br>
-  <div id="text" style="width:100px; margin-left:150px;">
-  <canvas id="canvas" width="200" height="200"></canvas>
-  </div>
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+  <canvas></canvas>
+
+</div>
+
+  <script>
+
+  // example https://www.w3resource.com/javascript-exercises/javascript-drawing-exercises.php
+
+  var canvases = document.getElementsByTagName('canvas');
+
+    for( var i=0; i<canvases.length; i++){
+         ctx = canvases[i].getContext('2d');
+
+         multp = i*1
+
+         // Outer circle
+         ctx.arc(75+multp*10,75+multp*10,50+multp*10,0,Math.PI*2,true);
+         ctx.moveTo(110,75);
+
+         ctx.stroke();
+         ctx.lineWidth = 10;
+
+         ctx.strokeStyle = 'black';
+         ctx.stroke();
+  }
+  </script>
 
 
 
