@@ -63,6 +63,7 @@ def build_face():
         face['nose'] = build_nose(i)
         face['face'] = make_face(ref_json)
         face['eyes'] = make_eyes(ref_json)
+        face['mouth'] = make_mouth(ref_json)
         faces.append(face)
 
 
@@ -76,6 +77,30 @@ def build_face():
         f.write( ';' + '\n')
         f.close()
 
+
+def make_mouth(ref_json):
+    """
+    describe mouth
+    """
+
+    canvas_width = ref_json['canvas_width']
+    canvas_height = ref_json['canvas_height']
+    i = ref_json['i']
+
+    value1 = scaled(normalized(list_values('slope_HR'), i), 20, 70)
+    value2 = scaled(normalized(list_values('slope_TEMP'), i), 3, 20)
+    delta = scaled(normalized(list_values('slope_EDA'), i), 0.5, 1)
+
+
+    mouth = {}
+
+    mouth['x'] = canvas_width*1/2
+    mouth['y'] = canvas_height*3/4
+    mouth['rX'] =  value1
+    mouth['rY'] = value2
+    mouth['fillColor'] = calculate_color('mouth_fill', i, list_values('slope_TEMP'))
+    mouth['outlineColor'] = calculate_color('mouth_outline', i, list_values('slope_EDA'))
+    return(mouth)
 
 
 def make_eyes(ref_json):
@@ -91,8 +116,8 @@ def make_eyes(ref_json):
     value2 = scaled(normalized(list_values('slope_TEMP'), i), 3, 20)
     delta = scaled(normalized(list_values('slope_EDA'), i), 0.5, 1)
 
-    eyes = {}
 
+    eyes = {}
     eyes['d1'] = value2
     eyes['x1'] = canvas_width/2 + value1
     eyes['y1'] = canvas_height/3
@@ -119,6 +144,9 @@ def make_face(ref_json):
     value2 = scaled(normalized(list_values('slope_TEMP'), i), 50, 100)
     delta = scaled(normalized(list_values('slope_EDA'), i), 20, 50)
 
+    cheekD = scaled(normalized(list_values('slope_TEMP'), i), 20, 50)
+    cheekshift = scaled(normalized(list_values('slope_EDA'), i), -30, 30)
+
     face = {}
     face['x1'] = canvas_width/2
     face['y1'] = canvas_height/2 + delta
@@ -126,6 +154,11 @@ def make_face(ref_json):
     face['x2'] = canvas_width/2
     face['y2'] = canvas_height/2 - delta
     face['d2'] = value2
+    face['cheek1x'] = canvas_width/2 + value1*1/3 + cheekD
+    face['cheek2x'] = canvas_width/2 - (value1*1/3 + cheekD)
+    face['cheek1y'] = canvas_height/2 + cheekshift
+    face['cheek2y'] = canvas_height/2 + cheekshift
+    face['cheekd'] = cheekD
 
     face['fillColor'] = calculate_color('face_fill', i, list_values('slope_HR'))
     face['outlineColor'] = calculate_color('face_outline', i, list_values('slope_HR'))
@@ -204,6 +237,22 @@ def calculate_color(type, i, values):
         r = int(0   + val*mods[0])
         g = int(255 - val*mods[1])
         b = int(255 - val*mods[2])
+
+
+    elif type == 'mouth_outline':
+        # default
+        mods = [0.1, 1, 0.2]
+        r = int(255 - val*mods[0])
+        g = int(0   + val*mods[1])
+        b = int(0   + val*mods[2])
+
+    elif type == 'mouth_fill':
+        # default
+        mods = [0.1, 0.5, 0.2]
+        r = int(255 - val*mods[0])
+        g = int(0   + val*mods[1])
+        b = int(0   + val*mods[2])
+
 
     else:
         num1 = random.random()

@@ -147,58 +147,69 @@
          var nose = faces['faces'][i]['nose']
          var face = faces['faces'][i]['face']
          var eyes = faces['faces'][i]['eyes']
+         var mouth = faces['faces'][i]['mouth']
 
-      ctx.strokeStyle = face['fillColor'];
-      ctx.fillStyle = face['outlineColor'];
-      ctx.arc(face['x1'],face['y1'],face['d1'],0,Math.PI*2,true);
-      ctx.moveTo(face['x2'], face['y2']);
-      ctx.arc(face['x2'],face['y2'],face['d2'],0,Math.PI*2,true);
-      ctx.lineWidth = 15;
-      ctx.stroke();
-      ctx.fill();
+         // draw face 
+        ctx.strokeStyle = face['fillColor'];
+        ctx.fillStyle = face['outlineColor'];
+        ctx.arc(face['x1'],face['y1'],face['d1'],0,Math.PI*2,true);
+        ctx.moveTo(face['x2'], face['y2']);
+        ctx.arc(face['x2'],face['y2'],face['d2'],0,Math.PI*2,true);
+        ctx.moveTo(face['cheek1x'],face['cheek1y']);
+        ctx.arc(face['cheek1x'],face['cheek1y'],face['cheekd'],0,Math.PI*2,true);
+        ctx.moveTo(face['cheek2x'],face['cheek2y']);
+        ctx.arc(face['cheek2x'],face['cheek2y'],face['cheekd'],0,Math.PI*2,true);
+        ctx.lineWidth = 15;
+        ctx.stroke();
+        ctx.fill();
 
-      var triangle = {
-          x1: nose['x1'],
-          y1: nose['y1'],
-          x2: nose['x2'],
-          y2: nose['y2'],
-          x3: nose['x3'],
-          y3: nose['y3'],
+        // nose
+        ctx.strokeStyle = nose['outlineColor'];
+        ctx.fillStyle = nose['fillColor'];
+        ctx.lineWidth = 15;
+        ctx.beginPath();
+        ctx.moveTo(nose['x1'], nose['y1']);
+        ctx.lineTo(nose['x2'], nose['y2']);
+        ctx.lineTo(nose['x3'], nose['y3']);
+        ctx.lineTo(nose['x1'], nose['y1']);
+        ctx.closePath();
+        ctx.stroke();
+        ctx.fill();
+
+
+        // draw eyes
+        // drawing an ellipse
+        // https://copyprogramming.com/code/draw-an-ellipse-in-javascript
+        // ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise]);
+        -->
+        ctx.strokeStyle = eyes['outlineColor'];
+        ctx.fillStyle = eyes['fillColor'];
+        ctx.lineWidth = 3;
+        ctx.moveTo(eyes['x1'], eyes['y1']);
+        ctx.ellipse(eyes['x1'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*2, Math.PI, Math.PI*1.5, true);
+        ctx.moveTo(eyes['x2'], eyes['y1']);
+        ctx.ellipse(eyes['x2'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*2, Math.PI*1.5, Math.PI*0, true);
+        ctx.stroke();
+        ctx.fill();
+
+        ctx.moveTo(eyes['x1'], eyes['y1']);
+        ctx.ellipse(eyes['x1'],eyes['y1'],eyes['d2'], eyes['d3'], Math.PI*eyes['sweep'], Math.PI*1, Math.PI*0, true);
+        ctx.moveTo(eyes['x2'], eyes['y1']);
+        ctx.ellipse(eyes['x2'],eyes['y1'],eyes['d2'], eyes['d3'], Math.PI*eyes['sweep'], Math.PI*0, Math.PI*1, false);
+        ctx.stroke();
+
+
+        // mouth
+        ctx.strokeStyle = mouth['outlineColor'];
+        ctx.fillStyle = mouth['fillColor'];
+        ctx.lineWidth = 3;
+        ctx.moveTo(mouth['x'], mouth['y']);
+        ctx.ellipse(mouth['x'],mouth['y'],mouth['rX'], mouth['rY'], 0, Math.PI, 0, true);
+        ctx.stroke();
+        ctx.fill();
+
+
       }
-
-      ctx.strokeStyle = nose['outlineColor'];
-      ctx.fillStyle = nose['fillColor'];
-      ctx.lineWidth = 15;
-      ctx.beginPath();
-      ctx.moveTo(triangle.x1, triangle.y1);
-      ctx.lineTo(triangle.x2, triangle.y2);
-      ctx.lineTo(triangle.x3, triangle.y3);
-      ctx.lineTo(triangle.x1, triangle.y1);
-      ctx.closePath();
-      ctx.stroke();
-      ctx.fill();
-
-      // drawing an ellipse
-      // https://copyprogramming.com/code/draw-an-ellipse-in-javascript
-      // ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise]);
-      -->
-      ctx.strokeStyle = eyes['outlineColor'];
-      ctx.fillStyle = eyes['fillColor'];
-      ctx.lineWidth = 3;
-      ctx.moveTo(eyes['x1'], eyes['y1']);
-      ctx.ellipse(eyes['x1'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*2, Math.PI, Math.PI*1.5, true);
-      ctx.moveTo(eyes['x2'], eyes['y1']);
-      ctx.ellipse(eyes['x2'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*2, Math.PI*1.5, Math.PI*0, true);
-      ctx.stroke();
-      ctx.fill();
-
-      ctx.moveTo(eyes['x1'], eyes['y1']);
-      ctx.ellipse(eyes['x1'],eyes['y1'],eyes['d2'], eyes['d3'], Math.PI*eyes['sweep'], Math.PI*1, Math.PI*0, true);
-      ctx.moveTo(eyes['x2'], eyes['y1']);
-      ctx.ellipse(eyes['x2'],eyes['y1'],eyes['d2'], eyes['d3'], Math.PI*eyes['sweep'], Math.PI*0, Math.PI*1, false);
-      ctx.stroke();
-
-    }
 
 
 
