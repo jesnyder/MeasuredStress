@@ -32,7 +32,7 @@
   <script src="js/draw.js"></script>
   <script src="js/draw2.js"></script>
 
-  <div style="display:inline-block; text-align:left; width:100%; margin-left:3%;  max-width:900px;">
+  <div style="display:inline-block; text-align:left; width:900px; margin-left:3%;  max-width:900px;">
 
   <canvas></canvas>
   <canvas></canvas>
@@ -46,6 +46,7 @@
   <script>
 
   // example https://www.w3resource.com/javascript-exercises/javascript-drawing-exercises.php
+  // formatting help https://www.javascripttutorial.net/web-apis/javascript-arc/
 
   var canvases = document.getElementsByTagName('canvas');
 
@@ -55,14 +56,26 @@
          multp = i*1
 
          // Outer circle
-         ctx.arc(75+multp*10,75+multp*10,50+multp*10,0,Math.PI*2,true);
+         ctx.moveTo(125,125);
+         ctx.arc(150,75,100,0,Math.PI*2,true);
+         ctx.fillStyle = 'rgba(255,0,0,0.1)';
          ctx.moveTo(110,75);
-
+         // Mouth
+         ctx.arc(75,75,35,0,Math.PI,false);
+         // Lefy and Right eye
+         ctx.moveTo(55,65);
+         ctx.arc(60,65,5,0,Math.PI*2,true);
+         ctx.arc(90,65,5,0,Math.PI*2,true);
          ctx.stroke();
-         ctx.lineWidth = 10;
+         ctx.lineWidth = i;
 
          ctx.strokeStyle = 'black';
+         ctx.fillStyle = 'rgba(255,255,0,0.1)';
+         ctx.strokeStyle = 'red';
+        ctx.fillStyle = 'rgba(255,0,0,0.1)';
+        ctx.lineWidth = 5;
          ctx.stroke();
+         ctx.fill();
   }
   </script>
 
