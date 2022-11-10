@@ -1,95 +1,52 @@
-<!--
-Source Code:
-https://github.com/jesnyder/mapGMP
-Generated:
-2022-08-07 19:04:07.986898
--->
+<html>
+  <head>
+    <title>MeasuredStress</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.0/dist/leaflet.css"
+    />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+  </head>
 
-<title>Measured Stress</title>
-<meta charset="utf-8">
-
-<!-- Load styles -->
-<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-
-<!-- https://vectorjs.org/ -->
-<link rel="stylesheet" href="https://vectorjs.org/library.css">
-
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-
-<!--
-Load plotly
-https://plotly.com/javascript/getting-started/
--->
-<script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
-
-<!-- Load plotly.js
-https://plotly.com/javascript/getting-started/
-<script src="plotly-2.14.0.min.js"></script>
- -->
-
-<!-- Load source json -->
-<script type="text/javascript"  src="js/HI.js"></script>
-<script type="text/javascript"  src="js/PMR.js"></script>
-
-<!-- Load js code
-<script type="text/javascript"  src="js/map.js"></script>
-<script type="text/javascript"  src="js/plot.js"></script>
--->
+  <body>
 
 
-<link rel="stylesheet" type="text/css" href="style.css">
+    <nav class="navbar background">
+      <ul class="nav-list">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="about/">About</a></li>
+      <li><a href="data/">Data</a></li>
+      <li><a href="discuss/">Discussion</a></li>
+      <li><a href="join/">Join</a></li>
+    </ul>
+    </nav>
+    <br>
 
-</head>
+
+    <!--
+    example navigation bar
+    https://codepen.io/EvyatarDa/pen/waKXMd
+    -->
+    <div class="container red topBotomBordersOut">
+      <a>HOME</a>
+      <a>ARTICLES</a>
+      <a>PORTFOLIO</a>
+      <a>ABOUT</a>
+      <a>CONTACT</a>
+    </div>
+
+    <div id="text" style="max-width:1000px; width:80% ; margin-left: 3%; font-family: Calibri;">
 
 
-<body>
+    </div>
 
-<!--
-<div id="my_dataviz"></div>
-<div id="ACC" style="width:600px;height:250px;"></div>
-<div id="TEMP" style="width:600px;height:350px;"></div>
-<div id="scatter"></div>
--->
+    <script src="js/draw.js"></script>
+    <body onload="draw();">
+    <canvas id="canvas" width="250" height="250"></canvas>
 
 
 
-<p> Hello! </p>
 
-<div id="my-interactive"></div>
-<script type="module" src="js/vector.js"></script>
-
-
-<div>
-  <p class="name">freeCodeCamp</p>
-  <button onclick="changeColor()">Record 001</button>
-</div>
-
-
-<div id="myDiv"></div>
-<div id="ACC"></div>
-<div id="BVP"></div>
-<div id="EDA"></div>
-<div id="HR"></div>
-<div id="TEMP"></div>
-
-
-
-</body>
-
-<script type="text/javascript"  src="js/my_dataviz.js"></script>
-<script type="text/javascript"  src="js/vector.js"></script>
-
-
-<!--
-<script type="text/javascript"  src="js/scatter.js"></script>
-<script type="text/javascript"  src="js/ACC.js"></script>
-<script type="text/javascript"  src="js/TEMP.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
--->
-
+  </body>
 </html>

@@ -1,3 +1,7 @@
+import csv
+import codecs
+import datetime
+import json
 import math
 import matplotlib
 from matplotlib import cm
@@ -10,6 +14,7 @@ import pandas as pd
 import plotly
 from plotly.tools import FigureFactory as ff
 import shutil
+import time
 
 
 
@@ -46,6 +51,23 @@ def lookup_type(company):
     types = list(df['types'])
     type = types[0]
     return(type)
+
+
+def print_progress(item, item_list, counter):
+    """
+    print the progress
+    """
+
+    i = item_list.index(item)
+    len_list = len(item_list)
+    progress = i/len_list*100
+    progress = round(progress,2)
+
+    if counter < progress:
+        print(str(progress) + ' % complete.')
+        counter = counter + 5
+
+    return(counter)
 
 
 def reset_df(df):
@@ -92,23 +114,67 @@ def retrieve_df(name):
     """
 
 
-    # retrieve df
-    if '.' not in str(name):
-        # check path
-        df_path = retrieve_path(name)
-        print('df_path = ')
-        print(df_path)
+    if '.xlsx' in name or '.xls' in name:
 
-        df = pd.read_csv(retrieve_path(name))
+        #print('name = ' + str(name))
+        df = pd.read_excel(name)
+        #print('excel file df = ')
+        #print(df)
+        return(df)
 
-    else:
-        df = pd.read_csv(name)
+    encodings = ['utf-16', "utf-8-sig", "utf-8", "cp1252", "latin1", 'utf-8-sig', ]
+
+    # find the path
+    if '.' in str(name): df_path = name
+    else: df_path = retrieve_path(name)
+
+    #print('df_path = ')
+    #print(df_path)
+
+    try:
+        df = pd.read_csv(df_path)
+
+    except:
+
+        try:
+            for encoding in encodings:
+                df = pd.read_csv(retrieve_path(name), encoding=encoding)
+                continue
+        except:
+
+            f = open(df_path,"r")
+            lines = f.readlines()
+            f.close()
+
+            df = pd.DataFrame()
+            df['list'] = lines
+
 
     for col in df.columns:
         if 'Unnamed:' in col:
             del df[col]
 
     return(df)
+
+
+def retrieve_json(path):
+    """
+    return json
+    provide path name
+    """
+
+
+    if '.json' in path:
+        f = open(path)
+        file_json = json.load(f)
+        f.close()
+
+    else:
+        f = open(retrieve_path(path))
+        file_json = json.load(f)
+        f.close()
+
+    return(file_json)
 
 
 def retrieve_list(filename):
@@ -161,6 +227,8 @@ def retrieve_path(name):
 
         # create the folder, if it doesnt exist
         if os.path.exists(path) == False: os.mkdir(path)
+
+    #print('path = ' + str(path))
 
     return(path)
 
@@ -226,6 +294,82 @@ def rgb_to_hexcolorcode(rgb):
     hex_str = str(hex_str).upper()
 
     return(hex_str)
+
+
+def save_df(df, fil_dst, col_sort):
+    """
+    reset the dataframe and save
+    """
+
+    try:
+        df = df.sort_values(by = col_sort)
+    except:
+        col_sort = df.columns[0]
+        df = df.sort_values(by = col_sort)
+
+    df = reset_df(df)
+
+    if '.csv' in fil_dst:
+        df.to_csv(fil_dst)
+
+    else:
+        df.to_csv(retrieve_path(fil_dst))
+
+
+
+def save_json(file_json, path):
+    """
+    save json to path
+    """
+
+
+    if '.json' in path:
+        with open(path, "w") as f:
+            json.dump(file_json, f, indent = 7)
+        f.close()
+
+    else:
+        dst_json = (retrieve_path(path))
+        with open(dst_json, "w") as f:
+            json.dump(file_json, f, indent = 7)
+        f.close()
+
+
+def save_value(name, value):
+    """
+    save a value with a timestamp
+    """
+
+    df_temp = pd.DataFrame()
+    df_temp['name'] = [name]
+    df_temp['value'] = [value]
+    df_temp['saved'] = [datetime.datetime.today()]
+
+    try:
+        df = retrieve_df('saved_values')
+
+    except:
+        df = pd.DataFrame()
+        df['name'] = []
+        df['value'] = []
+        df['saved'] = []
+
+    df = df[df['name'] != name]
+    df = df.append(df_temp)
+    df = df.sort_values(by = 'name', ascending='true')
+    df = reset_df(df)
+    df.to_csv(retrieve_path('saved_values'))
+
+
+def send_to_df(list, name, file_dst):
+    """
+    save a list as a sorted df
+    """
+    df = pd.DataFrame()
+    df[name] = list
+    #df = df.sort_values(by=name, ascending=True)
+    #df = reset_df(df)
+    df.to_csv(retrieve_path(file_dst))
 
 
 def str_list(str_src):

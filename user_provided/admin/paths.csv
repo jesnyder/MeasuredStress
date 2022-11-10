@@ -1,12 +1,20 @@
 name,path
 
-admin
+# admin referenced
 ref_variable,user_provided admin ref_variable.csv
+
+# build_json referenced
+src_csv,user_provided source_data
+
+# build_json create
+dst_json,program_generated json
+dst_df_data,program_generated df 
+
+# build_scatter_record referenced
+json_compiled,program_generated json
 
 data
 paired_records,program_generated df paired_records.csv
 source_data,user_provided source_data
-
-dst_json,program_generated json
 
 dst_js,docs js

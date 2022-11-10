@@ -25,5 +25,5 @@ pythonanalysis:
 # serve the local directory
 .PHONY: web
 web: pythonanalysis
-	python3 -m http.server
+	python3 -m http.server --directory docs/
 	#python3 -mwebbrowser http://127.0.0.1:8000/report.pdf

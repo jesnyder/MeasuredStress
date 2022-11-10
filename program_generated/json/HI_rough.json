@@ -1,0 +1,1651 @@
+{
+     "record_count": 47,
+     "record_duration": 28.605277777777786,
+     "records": [
+          {
+               "name": "HI_001",
+               "fol_names": [
+                    "1547274726_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547274726_A01172"
+               ],
+               "record_begin": 1547274727,
+               "record_end": 1547276602,
+               "record_duration": 31.25,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547274726",
+                              "fil_src": "user_provided/source_data/HI/1547274726_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547274726",
+                              "fil_src": "user_provided/source_data/HI/1547274726_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547274726",
+                              "fil_src": "user_provided/source_data/HI/1547274726_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_002",
+               "fol_names": [
+                    "1547276660_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547276660_A01172"
+               ],
+               "record_begin": 1547276661,
+               "record_end": 1547277206,
+               "record_duration": 9.083333333333334,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547276660",
+                              "fil_src": "user_provided/source_data/HI/1547276660_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547276660",
+                              "fil_src": "user_provided/source_data/HI/1547276660_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547276660",
+                              "fil_src": "user_provided/source_data/HI/1547276660_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_003",
+               "fol_names": [
+                    "1547700355_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547700355_A01172"
+               ],
+               "record_begin": 1547700356,
+               "record_end": 1547701408,
+               "record_duration": 17.533333333333335,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547700355",
+                              "fil_src": "user_provided/source_data/HI/1547700355_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547700355",
+                              "fil_src": "user_provided/source_data/HI/1547700355_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547700355",
+                              "fil_src": "user_provided/source_data/HI/1547700355_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_004",
+               "fol_names": [
+                    "1547782407_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547782407_A01172"
+               ],
+               "record_begin": 1547782408,
+               "record_end": 1547785365,
+               "record_duration": 49.28333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547782407",
+                              "fil_src": "user_provided/source_data/HI/1547782407_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547782407",
+                              "fil_src": "user_provided/source_data/HI/1547782407_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547782407",
+                              "fil_src": "user_provided/source_data/HI/1547782407_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_005",
+               "fol_names": [
+                    "1547880148_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547880148_A01172"
+               ],
+               "record_begin": 1547880149,
+               "record_end": 1547881718,
+               "record_duration": 26.15,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547880148",
+                              "fil_src": "user_provided/source_data/HI/1547880148_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547880148",
+                              "fil_src": "user_provided/source_data/HI/1547880148_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547880148",
+                              "fil_src": "user_provided/source_data/HI/1547880148_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_006",
+               "fol_names": [
+                    "1547954828_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1547954828_A01172"
+               ],
+               "record_begin": 1547954829,
+               "record_end": 1547955958,
+               "record_duration": 18.816666666666666,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547954828",
+                              "fil_src": "user_provided/source_data/HI/1547954828_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547954828",
+                              "fil_src": "user_provided/source_data/HI/1547954828_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1547954828",
+                              "fil_src": "user_provided/source_data/HI/1547954828_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_007",
+               "fol_names": [
+                    "1548038666_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1548038666_A01172"
+               ],
+               "record_begin": 1548038667,
+               "record_end": 1548040832,
+               "record_duration": 36.083333333333336,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1548038666",
+                              "fil_src": "user_provided/source_data/HI/1548038666_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1548038666",
+                              "fil_src": "user_provided/source_data/HI/1548038666_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1548038666",
+                              "fil_src": "user_provided/source_data/HI/1548038666_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_008",
+               "fol_names": [
+                    "1552402053_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1552402053_A01172"
+               ],
+               "record_begin": 1552402054,
+               "record_end": 1552405048,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552402053",
+                              "fil_src": "user_provided/source_data/HI/1552402053_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552402053",
+                              "fil_src": "user_provided/source_data/HI/1552402053_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552402053",
+                              "fil_src": "user_provided/source_data/HI/1552402053_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_009",
+               "fol_names": [
+                    "1552573021_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1552573021_A01172"
+               ],
+               "record_begin": 1552573022,
+               "record_end": 1552573547,
+               "record_duration": 8.75,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552573021",
+                              "fil_src": "user_provided/source_data/HI/1552573021_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552573021",
+                              "fil_src": "user_provided/source_data/HI/1552573021_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552573021",
+                              "fil_src": "user_provided/source_data/HI/1552573021_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_010",
+               "fol_names": [
+                    "1552590157_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1552590157_A01172"
+               ],
+               "record_begin": 1552590158,
+               "record_end": 1552593152,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552590157",
+                              "fil_src": "user_provided/source_data/HI/1552590157_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552590157",
+                              "fil_src": "user_provided/source_data/HI/1552590157_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1552590157",
+                              "fil_src": "user_provided/source_data/HI/1552590157_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_011",
+               "fol_names": [
+                    "1552620154_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1552620154_A01609"
+               ],
+               "record_begin": 1552620155,
+               "record_end": 1552622654,
+               "record_duration": 41.65,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1552620154",
+                              "fil_src": "user_provided/source_data/HI/1552620154_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1552620154",
+                              "fil_src": "user_provided/source_data/HI/1552620154_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1552620154",
+                              "fil_src": "user_provided/source_data/HI/1552620154_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_012",
+               "fol_names": [
+                    "1553089387_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1553089387_A01609"
+               ],
+               "record_begin": 1553089388,
+               "record_end": 1553091211,
+               "record_duration": 30.383333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553089387",
+                              "fil_src": "user_provided/source_data/HI/1553089387_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553089387",
+                              "fil_src": "user_provided/source_data/HI/1553089387_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553089387",
+                              "fil_src": "user_provided/source_data/HI/1553089387_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_013",
+               "fol_names": [
+                    "1553102751_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1553102751_A01609"
+               ],
+               "record_begin": 1553102752,
+               "record_end": 1553104289,
+               "record_duration": 25.616666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553102751",
+                              "fil_src": "user_provided/source_data/HI/1553102751_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553102751",
+                              "fil_src": "user_provided/source_data/HI/1553102751_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1553102751",
+                              "fil_src": "user_provided/source_data/HI/1553102751_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_014",
+               "fol_names": [
+                    "1553885926_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1553885926_A01172"
+               ],
+               "record_begin": 1553885927,
+               "record_end": 1553887890,
+               "record_duration": 32.71666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1553885926",
+                              "fil_src": "user_provided/source_data/HI/1553885926_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1553885926",
+                              "fil_src": "user_provided/source_data/HI/1553885926_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1553885926",
+                              "fil_src": "user_provided/source_data/HI/1553885926_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_015",
+               "fol_names": [
+                    "1554082410_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1554082410_A01172"
+               ],
+               "record_begin": 1554082411,
+               "record_end": 1554083607,
+               "record_duration": 19.933333333333334,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554082410",
+                              "fil_src": "user_provided/source_data/HI/1554082410_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554082410",
+                              "fil_src": "user_provided/source_data/HI/1554082410_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554082410",
+                              "fil_src": "user_provided/source_data/HI/1554082410_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_016",
+               "fol_names": [
+                    "1554403777_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1554403777_A01172"
+               ],
+               "record_begin": 1554403778,
+               "record_end": 1554406772,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554403777",
+                              "fil_src": "user_provided/source_data/HI/1554403777_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554403777",
+                              "fil_src": "user_provided/source_data/HI/1554403777_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554403777",
+                              "fil_src": "user_provided/source_data/HI/1554403777_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_017",
+               "fol_names": [
+                    "1554748372_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1554748372_A01609"
+               ],
+               "record_begin": 1554748373,
+               "record_end": 1554750734,
+               "record_duration": 39.35,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1554748372",
+                              "fil_src": "user_provided/source_data/HI/1554748372_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1554748372",
+                              "fil_src": "user_provided/source_data/HI/1554748372_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1554748372",
+                              "fil_src": "user_provided/source_data/HI/1554748372_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_018",
+               "fol_names": [
+                    "1554840090_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1554840090_A01172"
+               ],
+               "record_begin": 1554840091,
+               "record_end": 1554842316,
+               "record_duration": 37.083333333333336,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554840090",
+                              "fil_src": "user_provided/source_data/HI/1554840090_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554840090",
+                              "fil_src": "user_provided/source_data/HI/1554840090_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554840090",
+                              "fil_src": "user_provided/source_data/HI/1554840090_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_019",
+               "fol_names": [
+                    "1554906953_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1554906953_A01172"
+               ],
+               "record_begin": 1554906954,
+               "record_end": 1554908667,
+               "record_duration": 28.55,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554906953",
+                              "fil_src": "user_provided/source_data/HI/1554906953_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554906953",
+                              "fil_src": "user_provided/source_data/HI/1554906953_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1554906953",
+                              "fil_src": "user_provided/source_data/HI/1554906953_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_020",
+               "fol_names": [
+                    "1555002731_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1555002731_A01172"
+               ],
+               "record_begin": 1555002732,
+               "record_end": 1555004359,
+               "record_duration": 27.116666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1555002731",
+                              "fil_src": "user_provided/source_data/HI/1555002731_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1555002731",
+                              "fil_src": "user_provided/source_data/HI/1555002731_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1555002731",
+                              "fil_src": "user_provided/source_data/HI/1555002731_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_021",
+               "fol_names": [
+                    "1555696275_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1555696275_A01609"
+               ],
+               "record_begin": 1555696276,
+               "record_end": 1555698929,
+               "record_duration": 44.21666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555696275",
+                              "fil_src": "user_provided/source_data/HI/1555696275_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555696275",
+                              "fil_src": "user_provided/source_data/HI/1555696275_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555696275",
+                              "fil_src": "user_provided/source_data/HI/1555696275_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_022",
+               "fol_names": [
+                    "1555736782_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1555736782_A01609"
+               ],
+               "record_begin": 1555736783,
+               "record_end": 1555739530,
+               "record_duration": 45.78333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555736782",
+                              "fil_src": "user_provided/source_data/HI/1555736782_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555736782",
+                              "fil_src": "user_provided/source_data/HI/1555736782_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555736782",
+                              "fil_src": "user_provided/source_data/HI/1555736782_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_023",
+               "fol_names": [
+                    "1555987268_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1555987268_A01609"
+               ],
+               "record_begin": 1555987269,
+               "record_end": 1555989260,
+               "record_duration": 33.18333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555987268",
+                              "fil_src": "user_provided/source_data/HI/1555987268_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555987268",
+                              "fil_src": "user_provided/source_data/HI/1555987268_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1555987268",
+                              "fil_src": "user_provided/source_data/HI/1555987268_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_024",
+               "fol_names": [
+                    "1556028453_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556028453_A01609"
+               ],
+               "record_begin": 1556028454,
+               "record_end": 1556031448,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556028453",
+                              "fil_src": "user_provided/source_data/HI/1556028453_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556028453",
+                              "fil_src": "user_provided/source_data/HI/1556028453_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556028453",
+                              "fil_src": "user_provided/source_data/HI/1556028453_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_025",
+               "fol_names": [
+                    "1556039041_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556039041_A01609"
+               ],
+               "record_begin": 1556039042,
+               "record_end": 1556041765,
+               "record_duration": 45.38333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556039041",
+                              "fil_src": "user_provided/source_data/HI/1556039041_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556039041",
+                              "fil_src": "user_provided/source_data/HI/1556039041_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556039041",
+                              "fil_src": "user_provided/source_data/HI/1556039041_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_026",
+               "fol_names": [
+                    "1556115527_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556115527_A01172"
+               ],
+               "record_begin": 1556115528,
+               "record_end": 1556117163,
+               "record_duration": 27.25,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556115527",
+                              "fil_src": "user_provided/source_data/HI/1556115527_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556115527",
+                              "fil_src": "user_provided/source_data/HI/1556115527_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556115527",
+                              "fil_src": "user_provided/source_data/HI/1556115527_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_027",
+               "fol_names": [
+                    "1556125697_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556125697_A01609"
+               ],
+               "record_begin": 1556125698,
+               "record_end": 1556127969,
+               "record_duration": 37.85,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556125697",
+                              "fil_src": "user_provided/source_data/HI/1556125697_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556125697",
+                              "fil_src": "user_provided/source_data/HI/1556125697_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556125697",
+                              "fil_src": "user_provided/source_data/HI/1556125697_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_028",
+               "fol_names": [
+                    "1556219881_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556219881_A01609"
+               ],
+               "record_begin": 1556219882,
+               "record_end": 1556221769,
+               "record_duration": 31.45,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556219881",
+                              "fil_src": "user_provided/source_data/HI/1556219881_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556219881",
+                              "fil_src": "user_provided/source_data/HI/1556219881_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556219881",
+                              "fil_src": "user_provided/source_data/HI/1556219881_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_029",
+               "fol_names": [
+                    "1556301731_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556301731_A01609"
+               ],
+               "record_begin": 1556301732,
+               "record_end": 1556304597,
+               "record_duration": 47.75,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556301731",
+                              "fil_src": "user_provided/source_data/HI/1556301731_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556301731",
+                              "fil_src": "user_provided/source_data/HI/1556301731_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1556301731",
+                              "fil_src": "user_provided/source_data/HI/1556301731_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_030",
+               "fol_names": [
+                    "1556909851_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1556909851_A01172"
+               ],
+               "record_begin": 1556909852,
+               "record_end": 1556912846,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556909851",
+                              "fil_src": "user_provided/source_data/HI/1556909851_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556909851",
+                              "fil_src": "user_provided/source_data/HI/1556909851_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1556909851",
+                              "fil_src": "user_provided/source_data/HI/1556909851_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_031",
+               "fol_names": [
+                    "1557323445_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557323445_A01609"
+               ],
+               "record_begin": 1557323446,
+               "record_end": 1557326063,
+               "record_duration": 43.61666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557323445",
+                              "fil_src": "user_provided/source_data/HI/1557323445_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557323445",
+                              "fil_src": "user_provided/source_data/HI/1557323445_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557323445",
+                              "fil_src": "user_provided/source_data/HI/1557323445_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_032",
+               "fol_names": [
+                    "1557417534_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557417534_A01172"
+               ],
+               "record_begin": 1557417535,
+               "record_end": 1557419910,
+               "record_duration": 39.583333333333336,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557417534",
+                              "fil_src": "user_provided/source_data/HI/1557417534_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557417534",
+                              "fil_src": "user_provided/source_data/HI/1557417534_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557417534",
+                              "fil_src": "user_provided/source_data/HI/1557417534_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_033",
+               "fol_names": [
+                    "1557757425_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557757425_A01609"
+               ],
+               "record_begin": 1557757426,
+               "record_end": 1557759811,
+               "record_duration": 39.75,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557757425",
+                              "fil_src": "user_provided/source_data/HI/1557757425_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557757425",
+                              "fil_src": "user_provided/source_data/HI/1557757425_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557757425",
+                              "fil_src": "user_provided/source_data/HI/1557757425_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_034",
+               "fol_names": [
+                    "1557760240_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557760240_A01609"
+               ],
+               "record_begin": 1557760241,
+               "record_end": 1557762446,
+               "record_duration": 36.75,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557760240",
+                              "fil_src": "user_provided/source_data/HI/1557760240_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557760240",
+                              "fil_src": "user_provided/source_data/HI/1557760240_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557760240",
+                              "fil_src": "user_provided/source_data/HI/1557760240_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_035",
+               "fol_names": [
+                    "1557763139_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557763139_A01609"
+               ],
+               "record_begin": 1557763140,
+               "record_end": 1557764739,
+               "record_duration": 26.65,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557763139",
+                              "fil_src": "user_provided/source_data/HI/1557763139_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557763139",
+                              "fil_src": "user_provided/source_data/HI/1557763139_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557763139",
+                              "fil_src": "user_provided/source_data/HI/1557763139_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_036",
+               "fol_names": [
+                    "1557928726_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557928726_A01609"
+               ],
+               "record_begin": 1557928727,
+               "record_end": 1557930932,
+               "record_duration": 36.75,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557928726",
+                              "fil_src": "user_provided/source_data/HI/1557928726_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557928726",
+                              "fil_src": "user_provided/source_data/HI/1557928726_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557928726",
+                              "fil_src": "user_provided/source_data/HI/1557928726_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_037",
+               "fol_names": [
+                    "1557952047_A01172"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557952047_A01172"
+               ],
+               "record_begin": 1557952048,
+               "record_end": 1557955042,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557952047",
+                              "fil_src": "user_provided/source_data/HI/1557952047_A01172/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557952047",
+                              "fil_src": "user_provided/source_data/HI/1557952047_A01172/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01172",
+                              "wearable_begin": "1557952047",
+                              "fil_src": "user_provided/source_data/HI/1557952047_A01172/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_038",
+               "fol_names": [
+                    "1557957375_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1557957375_A01609"
+               ],
+               "record_begin": 1557957376,
+               "record_end": 1557959313,
+               "record_duration": 32.28333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557957375",
+                              "fil_src": "user_provided/source_data/HI/1557957375_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557957375",
+                              "fil_src": "user_provided/source_data/HI/1557957375_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1557957375",
+                              "fil_src": "user_provided/source_data/HI/1557957375_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_039",
+               "fol_names": [
+                    "1559137815_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1559137815_A01609"
+               ],
+               "record_begin": 1559137816,
+               "record_end": 1559140407,
+               "record_duration": 43.18333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559137815",
+                              "fil_src": "user_provided/source_data/HI/1559137815_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559137815",
+                              "fil_src": "user_provided/source_data/HI/1559137815_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559137815",
+                              "fil_src": "user_provided/source_data/HI/1559137815_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_040",
+               "fol_names": [
+                    "1559309040_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1559309040_A01609"
+               ],
+               "record_begin": 1559309041,
+               "record_end": 1559311364,
+               "record_duration": 38.71666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559309040",
+                              "fil_src": "user_provided/source_data/HI/1559309040_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559309040",
+                              "fil_src": "user_provided/source_data/HI/1559309040_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559309040",
+                              "fil_src": "user_provided/source_data/HI/1559309040_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_041",
+               "fol_names": [
+                    "1559311950_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1559311950_A01609"
+               ],
+               "record_begin": 1559311951,
+               "record_end": 1559314368,
+               "record_duration": 40.28333333333333,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559311950",
+                              "fil_src": "user_provided/source_data/HI/1559311950_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559311950",
+                              "fil_src": "user_provided/source_data/HI/1559311950_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1559311950",
+                              "fil_src": "user_provided/source_data/HI/1559311950_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_042",
+               "fol_names": [
+                    "1560885907_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1560885907_A01609"
+               ],
+               "record_begin": 1560885908,
+               "record_end": 1560887415,
+               "record_duration": 25.116666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1560885907",
+                              "fil_src": "user_provided/source_data/HI/1560885907_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1560885907",
+                              "fil_src": "user_provided/source_data/HI/1560885907_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1560885907",
+                              "fil_src": "user_provided/source_data/HI/1560885907_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_043",
+               "fol_names": [
+                    "1561053811_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1561053811_A01609"
+               ],
+               "record_begin": 1561053812,
+               "record_end": 1561056011,
+               "record_duration": 36.65,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561053811",
+                              "fil_src": "user_provided/source_data/HI/1561053811_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561053811",
+                              "fil_src": "user_provided/source_data/HI/1561053811_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561053811",
+                              "fil_src": "user_provided/source_data/HI/1561053811_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_044",
+               "fol_names": [
+                    "1561428256_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1561428256_A01609"
+               ],
+               "record_begin": 1561428257,
+               "record_end": 1561431251,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561428256",
+                              "fil_src": "user_provided/source_data/HI/1561428256_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561428256",
+                              "fil_src": "user_provided/source_data/HI/1561428256_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561428256",
+                              "fil_src": "user_provided/source_data/HI/1561428256_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_045",
+               "fol_names": [
+                    "1561948526_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1561948526_A01609"
+               ],
+               "record_begin": 1561948527,
+               "record_end": 1561951518,
+               "record_duration": 49.85,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561948526",
+                              "fil_src": "user_provided/source_data/HI/1561948526_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561948526",
+                              "fil_src": "user_provided/source_data/HI/1561948526_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1561948526",
+                              "fil_src": "user_provided/source_data/HI/1561948526_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_046",
+               "fol_names": [
+                    "1562035686_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1562035686_A01609"
+               ],
+               "record_begin": 1562035687,
+               "record_end": 1562038681,
+               "record_duration": 49.9,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562035686",
+                              "fil_src": "user_provided/source_data/HI/1562035686_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562035686",
+                              "fil_src": "user_provided/source_data/HI/1562035686_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562035686",
+                              "fil_src": "user_provided/source_data/HI/1562035686_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          },
+          {
+               "name": "HI_047",
+               "fol_names": [
+                    "1562704125_A01609"
+               ],
+               "fol_srcs": [
+                    "user_provided/source_data/HI/1562704125_A01609"
+               ],
+               "record_begin": 1562704126,
+               "record_end": 1562706269,
+               "record_duration": 35.71666666666667,
+               "sensor": {
+                    "EDA": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562704125",
+                              "fil_src": "user_provided/source_data/HI/1562704125_A01609/EDA.csv"
+                         }
+                    ],
+                    "HR": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562704125",
+                              "fil_src": "user_provided/source_data/HI/1562704125_A01609/HR.csv"
+                         }
+                    ],
+                    "TEMP": [
+                         {
+                              "wearable_name": "A01609",
+                              "wearable_begin": "1562704125",
+                              "fil_src": "user_provided/source_data/HI/1562704125_A01609/TEMP.csv"
+                         }
+                    ]
+               }
+          }
+     ]
+}
