@@ -8,10 +8,14 @@ src_csv,user_provided source_data
 
 # build_json create
 dst_json,program_generated json
-dst_df_data,program_generated df 
+dst_df_data,program_generated df
 
 # build_scatter_record referenced
 json_compiled,program_generated json
+
+# parameterize_face created
+face_json,docs js_face faces.json
+face_js,docs js_face faces.js
 
 data
 paired_records,program_generated df paired_records.csv

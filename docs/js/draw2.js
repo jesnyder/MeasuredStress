@@ -8,6 +8,8 @@
 
          multp = i*1
 
+         
+
          // Outer circle
          ctx.arc(75+multp*10,75+multp*10,50+multp*10,0,Math.PI*2,true);
          ctx.moveTo(110,75);

@@ -8,8 +8,8 @@
 
   <style>
         canvas {
-          width: 250px;
-          height: 250px;
+          width: 300px;
+          height: 300px;
           background-color: yellow;
           display: inline-block;
         }
@@ -29,17 +29,100 @@
 
 
 <body>
-  <script src="js/draw.js"></script>
-  <script src="js/draw2.js"></script>
 
-  <div style="display:inline-block; text-align:left; width:900px; margin-left:3%;  max-width:900px;">
+  <script src="js_face/faces.js"></script>
+  <script src="js_face/draw.js"></script>
 
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
-  <canvas></canvas>
+  <div style="display:inline-block; text-align:left; width:1200px; margin-left:3%;  max-width:1200px;">
+
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
+  <canvas width="300" height="300"></canvas>
 
 </div>
 
@@ -53,30 +136,66 @@
     for( var i=0; i<canvases.length; i++){
          ctx = canvases[i].getContext('2d');
 
+         console.log('i = ')
+         console.log(i)
+
          multp = i*1
 
-         // Outer circle
-         ctx.moveTo(125,125);
-         ctx.arc(150,75,100,0,Math.PI*2,true);
-         ctx.fillStyle = 'rgba(255,0,0,0.1)';
-         ctx.moveTo(110,75);
-         // Mouth
-         ctx.arc(75,75,35,0,Math.PI,false);
-         // Lefy and Right eye
-         ctx.moveTo(55,65);
-         ctx.arc(60,65,5,0,Math.PI*2,true);
-         ctx.arc(90,65,5,0,Math.PI*2,true);
-         ctx.stroke();
-         ctx.lineWidth = i;
+         var face_diameter = faces['faces'][i]['face_diameter']
+         var face_color = faces['faces'][i]['face_color']
+         var outline_color = faces['faces'][i]['outline_color']
+         var nose = faces['faces'][i]['nose']
+         var face = faces['faces'][i]['face']
+         var eyes = faces['faces'][i]['eyes']
 
-         ctx.strokeStyle = 'black';
-         ctx.fillStyle = 'rgba(255,255,0,0.1)';
-         ctx.strokeStyle = 'red';
-        ctx.fillStyle = 'rgba(255,0,0,0.1)';
-        ctx.lineWidth = 5;
-         ctx.stroke();
-         ctx.fill();
-  }
+      ctx.strokeStyle = face['fillColor'];
+      ctx.fillStyle = face['outlineColor'];
+      ctx.arc(face['x1'],face['y1'],face['d1'],0,Math.PI*2,true);
+      ctx.moveTo(face['x2'], face['y2']);
+      ctx.arc(face['x2'],face['y2'],face['d2'],0,Math.PI*2,true);
+      ctx.lineWidth = 15;
+      ctx.stroke();
+      ctx.fill();
+
+      var triangle = {
+          x1: nose['x1'],
+          y1: nose['y1'],
+          x2: nose['x2'],
+          y2: nose['y2'],
+          x3: nose['x3'],
+          y3: nose['y3'],
+      }
+
+      ctx.strokeStyle = nose['outlineColor'];
+      ctx.fillStyle = nose['fillColor'];
+      ctx.lineWidth = 15;
+      ctx.beginPath();
+      ctx.moveTo(triangle.x1, triangle.y1);
+      ctx.lineTo(triangle.x2, triangle.y2);
+      ctx.lineTo(triangle.x3, triangle.y3);
+      ctx.lineTo(triangle.x1, triangle.y1);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.fill();
+
+      // drawing an ellipse
+      // https://copyprogramming.com/code/draw-an-ellipse-in-javascript
+      // ctx.ellipse(x, y, radiusX, radiusY, rotation, startAngle, endAngle [, counterclockwise]);
+      -->
+      ctx.strokeStyle = eyes['outlineColor'];
+      ctx.fillStyle = eyes['fillColor'];
+      ctx.lineWidth = 2;
+      ctx.moveTo(eyes['x1'], eyes['y1']);
+      ctx.ellipse(eyes['x1'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*1.5, Math.PI, Math.PI*1.5, true);
+      ctx.moveTo(eyes['x2'], eyes['y1']);
+      ctx.ellipse(eyes['x2'],eyes['y1'],eyes['d1'], eyes['d2'], Math.PI*1.5, Math.PI, Math.PI*1.5, true);
+      ctx.stroke();
+      ctx.fill();
+
+    }
+
+
+
   </script>
 
 

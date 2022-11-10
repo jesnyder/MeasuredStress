@@ -20,6 +20,7 @@ from admin import retrieve_ref
 
 from build_json import build_json
 from build_scatter_record import build_scatter_record
+from parameterize_face import parameterize_face
 
 def main():
     """
@@ -28,9 +29,10 @@ def main():
 
     print("running main")
 
-    tasks = []
+    tasks = [3]
     if 1 in tasks: build_json()
     if 2 in tasks: build_scatter_record()
+    if 3 in tasks: parameterize_face()
 
     print("completed main")
 
