@@ -89,16 +89,18 @@ def make_eyes(ref_json):
 
     value1 = scaled(normalized(list_values('slope_HR'), i), 20, 70)
     value2 = scaled(normalized(list_values('slope_TEMP'), i), 3, 20)
-    delta = scaled(normalized(list_values('slope_EDA'), i), 0, 1)
+    delta = scaled(normalized(list_values('slope_EDA'), i), 0.5, 1)
 
     eyes = {}
-    eyes['sweep'] = delta
+
     eyes['d1'] = value2
     eyes['x1'] = canvas_width/2 + value1
     eyes['y1'] = canvas_height/3
     eyes['x2'] = canvas_width/2 - value1
     eyes['y2'] = canvas_height/3
     eyes['d2'] = value2*2
+    eyes['d3'] = value2*2.5
+    eyes['sweep'] = delta
     eyes['outline_color'] = calculate_color('eye_outline', i, list_values('slope_HR'))
     return(eyes)
 
