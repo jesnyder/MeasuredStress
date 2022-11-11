@@ -99,7 +99,7 @@ def write_scatter_js():
 
             json_src = retrieve_json(os.path.join(src_path, fil))
 
-            for record in json_src['records'][:10]:
+            for record in json_src['records']:
 
                 print(str(study_type) + ' ' + str(list(json_src['records']).index(record)) + ' file of ' +  str(len(list(json_src['records']))))
 
@@ -194,7 +194,7 @@ def write_scatter_js_comparison():
 
             json_src = retrieve_json(os.path.join(src_path, fil))
 
-            for record in json_src['records'][:10]:
+            for record in json_src['records']:
 
                 print(str(study_type) + ' ' + str(list(json_src['records']).index(record)) + ' file of ' +  str(len(list(json_src['records']))))
 
