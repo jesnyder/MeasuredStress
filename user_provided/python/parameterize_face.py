@@ -154,8 +154,8 @@ def make_face(ref_json):
     face['x2'] = canvas_width/2
     face['y2'] = canvas_height/2 - delta
     face['d2'] = value2
-    face['cheek1x'] = canvas_width/2 + value1*1/3 + cheekD
-    face['cheek2x'] = canvas_width/2 - (value1*1/3 + cheekD)
+    face['cheek1x'] = canvas_width/2 + value1*1/4 + cheekD
+    face['cheek2x'] = canvas_width/2 - (value1*1/4 + cheekD)
     face['cheek1y'] = canvas_height/2 + cheekshift
     face['cheek2y'] = canvas_height/2 + cheekshift
     face['cheekd'] = cheekD
@@ -270,7 +270,6 @@ def calculate_color(type, i, values):
     return(color_str)
 
 
-
 def find_colors(i):
     """
     return json of the colors
@@ -283,7 +282,6 @@ def find_colors(i):
     colors_json[term] = calculate_color(term, i, list_values('slope_HR'))
 
     return(colors_json)
-
 
 
 def list_values(key):

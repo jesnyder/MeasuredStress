@@ -17,6 +17,10 @@ json_compiled,program_generated json
 face_json,docs js_face faces.json
 face_js,docs js_face faces.js
 
+
+# write_html created
+canvas_html,docs html_temp canvas.html
+
 data
 paired_records,program_generated df paired_records.csv
 source_data,user_provided source_data
