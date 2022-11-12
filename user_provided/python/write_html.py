@@ -64,30 +64,44 @@ def write_record_html():
 
             print('fol = ' + str(fol))
 
+            insert_text = []
+            for fil in os.listdir(os.path.join(fol_src, fol)):
+
+                    insert_text = '\n'
+                    line.append(text)
+                    insert_text = '<br>' + '\n'
+                    line.append(text)
+                    insert_text = '<div id="' + str(fil.split('.')[0])
+                    line.append(text)
+                    insert_text = '" style="text-align:center; width:80%; margin-left: 10%; max-width:800px;">'
+                    line.append(text)
+                    insert_text = '<script src="js/' + str(os.path.join(fol, fil)) + '"></script>'  + '\n'
+                    line.append(text)
+                    insert_text = '</div>'
+                    insert_text = '<br>' + '\n'
+                    line.append(text)
+                    insert_text = '\n'
+                    line.append(text)
+
 
             temp_dst = os.path.join('docs', 'data', study, 'index_temp' + '.html')
             fil_dst = os.path.join('docs', 'data', study, fol + '.html')
+            """
             shutil.copy(temp_dst, fil_dst)
+            f = open(fil_dst,"r")
+            lines = f.readlines()
+            f.close()
+            """
 
-            with open(fil_dst, "a") as f:
-
-                for fil in os.listdir(os.path.join(fol_src, fol)):
-
-
-                    f.write('\n')
-                    f.write('<br>' + '\n')
-                    f.write('<div id="' + str(fil.split('.')[0]) )
-                    f.write('" style="text-align:center; width:80%; margin-left: 10%; max-width:800px;">')
-                    f.write('\n')
-                    f.write('<script src="js/' + str(os.path.join(fol, fil)) + '"></script>'  + '\n')
-                    f.write('</div>' )
-                    f.write('\n')
-
-
-                f.write('</body>' + '\n' )
-                f.write('</html>' + '\n')
-                f.close()
-
+            idenifier = '<!-- Insert chart info -->'
+            with open(temp_dst) as f_old, open(fil_dst, "w") as f_new:
+                for line in f_old:
+                    f_new.write(line)
+                    if 'identifier' in line:
+                        for text in insert_text:
+                            f_new.write(text)
+            f_old.close()
+            f_new.close()
 
 
 def write_canvas():
