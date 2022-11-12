@@ -30,7 +30,7 @@ def main():
 
     print("running main")
 
-    tasks = [4]
+    tasks = [2,3]
     if 1 in tasks: build_json()
     if 2 in tasks: build_scatter_record()
     if 3 in tasks: write_html()

@@ -64,28 +64,34 @@ def write_record_html():
 
             print('fol = ' + str(fol))
 
-            insert_text = []
+            insert_lines = []
             for fil in os.listdir(os.path.join(fol_src, fol)):
 
-                    insert_text = '\n'
-                    line.append(text)
-                    insert_text = '<br>' + '\n'
-                    line.append(text)
-                    insert_text = '<div id="' + str(fil.split('.')[0])
-                    line.append(text)
-                    insert_text = '" style="text-align:center; width:80%; margin-left: 10%; max-width:800px;">'
-                    line.append(text)
-                    insert_text = '<script src="js/' + str(os.path.join(fol, fil)) + '"></script>'  + '\n'
-                    line.append(text)
-                    insert_text = '</div>'
-                    insert_text = '<br>' + '\n'
-                    line.append(text)
-                    insert_text = '\n'
-                    line.append(text)
+                if '.html' in fil: continue
+
+                text = '\n'
+                insert_lines.append(text)
+                text = '<br>' + '\n'
+                insert_lines.append(text)
+                text = '<div id="' + str(fil.split('.')[0])
+                insert_lines.append(text)
+                text = '" style="text-align:center; width:80%; margin-left: 10%; max-width:800px;">'
+                insert_lines.append(text)
+                text = '\n'
+                insert_lines.append(text)
+                text = '<script src="' + str(os.path.join(fil)) + '"></script>'  + '\n'
+                insert_lines.append(text)
+                text = '</div>'
+                insert_lines.append(text)
+                text = '<br>' + '\n'
+                insert_lines.append(text)
+                text = '\n'
+                insert_lines.append(text)
 
 
             temp_dst = os.path.join('docs', 'data', study, 'index_temp' + '.html')
-            fil_dst = os.path.join('docs', 'data', study, fol + '.html')
+            fil_dst = os.path.join('docs', 'data', study, 'js', fol, fol + '.html')
+
             """
             shutil.copy(temp_dst, fil_dst)
             f = open(fil_dst,"r")
@@ -93,13 +99,46 @@ def write_record_html():
             f.close()
             """
 
-            idenifier = '<!-- Insert chart info -->'
-            with open(temp_dst) as f_old, open(fil_dst, "w") as f_new:
+            identifier = '<!-- Insert chart info -->'
+            with open(temp_dst) as f_old, open(fil_dst, "w+") as f_new:
+
                 for line in f_old:
+
                     f_new.write(line)
-                    if 'identifier' in line:
-                        for text in insert_text:
-                            f_new.write(text)
+
+                    if 'LASTRECORD' in line:
+
+                        fol_num = float(fol.split('_')[-1])
+                        fol_num_last = fol_num - 1
+
+                        if fol_num_last == 1:
+                            line = line.sub('LASTRECORD', ' ')
+                            f_new.write(line)
+
+                        else:
+                            fol_last = fol.split('_')[0] + '_' + str(fol_num_last).zfill(3)
+                            fil_dst_last = os.path.join('../' , fol_last, fol_last + '.html')
+                            line = line.sub('LASTRECORD', fil_dst_last)
+                            f_new.write(line)
+
+                    if 'NEXTRECORD' in line:
+
+                        fol_num_next = float(fol.split('_')[-1]) + 1
+                        fol_next = fol.split('_')[0] + '_' + str(fol_num_next).zfill(3)
+                        fil_dst_next = os.path.join('../' , fol_next, fol_next + '.html')
+
+                        if os.path.exists(fil_dst_next) == False:
+                            line = line.sub('NEXTRECORD', ' ')
+                            f_new.write(line)
+
+                        else:
+                            line = line.sub('NEXTRECORD', fil_dst_next)
+                            f_new.write(line)
+
+
+                    if identifier in line:
+                        for insert_line in insert_lines:
+                            f_new.write(insert_line)
             f_old.close()
             f_new.close()
 
@@ -122,7 +161,7 @@ def write_canvas():
             i = list(retrieve_json(fil_src)['records']).index(record)
 
             study = record['name'].split('_')[0]
-            href_dst = os.path.join('data', study, record['name'] + '.html')
+            href_dst = os.path.join('data', study, 'js', record['name'], record['name'] + '.html')
 
             line = str('<a href="' + str(href_dst) + '"><canvas width="300" height="300"></canvas></a> ')
             lines.append(line)

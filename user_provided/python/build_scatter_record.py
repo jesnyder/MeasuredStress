@@ -264,14 +264,14 @@ def write_scatter_js_comparison():
                         with open(fil_dst, "w") as f:
                             f.write('Plotly.newPlot( "' + desc_plotname + '" , '+ '\n')
                             json.dump(bubble_data, f, indent = 4)
-                            f.write(', ' + '\n')
+                            f.write(' ' + '\n')
                             json.dump(bubble_layout, f, indent = 4)
                             f.write(');')
-                            f.write(', ' + '\n')
-                            f.write(', ' + '\n')
+                            f.write(' ' + '\n')
+                            f.write(' ' + '\n')
                             f.write('Plotly.moveTraces("' + desc_plotname + '", [0, 1, 2],[2, 0, 1]);')
-                            f.write(', ' + '\n')
-                            f.write(', ' + '\n')
+                            f.write(' ' + '\n')
+                            f.write(' ' + '\n')
                         f.close()
 
 
