@@ -57,6 +57,7 @@ def write_record_html():
     for study in os.listdir(study_src):
 
         if '.html' in study: continue
+        if '.js' in study: continue
 
         fol_src = os.path.join(study_src, study, 'js')
         for fol in os.listdir(fol_src):
@@ -124,7 +125,7 @@ def write_record_html():
 
                         fol_num_next = float(fol.split('_')[-1]) + 1
                         fol_next = fol.split('_')[0] + '_' + str(int(fol_num_next)).zfill(3)
-                        fil_dst_next = os.path.join('../' , fol_next, fol_next + '.html')
+                        fil_dst_next = os.path.join('../' , fol_next)
 
                         if os.path.exists(fil_dst_next) == True:
                             line = str(line)

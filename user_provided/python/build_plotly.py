@@ -36,14 +36,15 @@ def build_plotly():
     print("begin plotly")
 
     tasks = [1, 2, 3]
-    if 1 in tasks: each_record_each_sensor_scatter()
+    if 1 in tasks: each_record_each_sensor_scatter('scatter')
+    if 2 in tasks: each_record_each_sensor_scatter('box')
 
 
     print("completed build_plotly")
 
 
 
-def each_record_each_sensor_scatter():
+def each_record_each_sensor_scatter(layout_type):
     """
     save a .js file to build a scatter plot using plotly
     save a separate file for each sensor of each record
@@ -61,8 +62,7 @@ def each_record_each_sensor_scatter():
 
                 sensor = record['sensor'][key]
 
-                layout_type = 'scatter'
-                figure_name = 'test_' + layout_type + '_' + study + '_' + record['name'] + '_' + key
+                figure_name = layout_type + '_' + study + '_' + record['name'] + '_' + key
 
                 temps = []
                 for wearable in sensor:
@@ -79,12 +79,15 @@ def each_record_each_sensor_scatter():
                     temp['plot_name'] = plot_name
                     temp['plot_title'] = str(figure_name).replace('_', ' ')
                     temp['layout_mode'] = 'markers'
-                    temp['layout_type'] = 'scatter'
-                    temp['name'] = record['name']
+                    temp['layout_type'] = layout_type
+                    temp['name'] = key + ' ' + temp['wearable_name']
                     temp['x_label'] = 'Time (minutes)'
-                    temp['y_label'] = key
-                    temp['x'] = list(retrieve_df(str(wearable['tmins']))['tmins'])
+                    temp['y_label'] = key + '(' + str(retrieve_sensor_units(key)) + ')'
                     temp['y'] = list(retrieve_df(str(wearable['meas']))['meas'])
+
+                    if layout_type != 'box':
+                        temp['x'] = list(retrieve_df(str(wearable['tmins']))['tmins'])
+
 
                     # assign colors
                     if 'EDA' in key: temp['color_type'] = 'reds'
@@ -104,6 +107,20 @@ def each_record_each_sensor_scatter():
                 save_json['record_name'] = record['name']
                 save_json['figure_name'] = figure_name
                 save_plotly_js(save_json)
+
+
+def retrieve_sensor_units(sensor):
+    """
+    return a str describing sensor units
+    """
+    if 'TEMP' in sensor: return('°C')
+    elif 'HR' in sensor: return('Hz')
+    elif 'ACC' in sensor: return('m/s2')
+    elif 'EDA' in sensor: return('microSiemens')
+    elif 'IBI' in sensor: return('seconds')
+    elif 'BVP' in sensor: return('photoplethysmograph')
+    elif 'Time' in sensor: return('minutes')
+    else: return(' ')
 
 
 def save_plotly_js(save_json):
@@ -150,7 +167,10 @@ def make_color(marker_json):
     according to the color type and scaled
     """
 
-    values = marker_json['x']
+    if 'x' in marker_json.keys():
+        values = marker_json['x']
+
+    values = marker_json['y']
     color_strs = []
     for i in range(len(values)):
 
@@ -164,25 +184,32 @@ def make_color(marker_json):
             mods = [0.1, 0.9, 0.1]
             r = int(0   + norm*mods[0])
             g = int(255 - norm*mods[1])
-            b = int(255 - norm*mods[1])
+            b = int(255 - norm*mods[2])
 
         if marker_json['color_type'] == 'greens':
             mods = [0.1, 0.1, 0.9]
             r = int(0   + norm*mods[0])
             g = int(255 - norm*mods[1])
-            b = int(255 - norm*mods[1])
+            b = int(255 - norm*mods[2])
 
         if marker_json['color_type'] == 'reds':
             mods = [0.1, 0.1, 0.9]
             r = int(255 -  norm*mods[0])
             g = int(0   + norm*mods[1])
-            b = int(0   + norm*mods[1])
+            b = int(0   + norm*mods[2])
+
+        if marker_json['color_type'] == 'oranges':
+            mods = [0.1, 0.9, 0.5]
+            r = int(255 -  norm*mods[0])
+            g = int(0   + norm*mods[1])
+            b = int(0   + norm*mods[2])
+
 
         else:
             mods = [0.95, 0.3, 0.8]
             r = int(0   + norm*mods[0])
             g = int(255 - norm*mods[1])
-            b = int(255 - norm*mods[1])
+            b = int(255 - norm*mods[2])
 
         color_str = str('rgb( ' + str(r) + ' , ' +  str(g) + ' , ' + str(b) + ' )')
         color_strs.append(color_str)
@@ -201,14 +228,14 @@ def write_data(ref_json):
     for wearable in ref_json:
 
         trace = {}
-        trace['x'] = wearable['x']
+        if 'x' in wearable.keys(): trace['x'] = wearable['x']
         trace['y'] = list(wearable['y'])
-        trace['name'] = 'name'
+        trace['name'] = wearable['name']
         trace['mode'] = wearable['layout_mode']
         trace['type'] = wearable['layout_type']
 
         marker_json = {}
-        marker_json['x'] = trace['x']
+        if 'x' in wearable.keys(): marker_json['x'] = trace['x']
         marker_json['y'] = trace['y']
         marker_json['x_title'] = wearable['x_label']
         marker_json['y_title'] = wearable['y_label']
