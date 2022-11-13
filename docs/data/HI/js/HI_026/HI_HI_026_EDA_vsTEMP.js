@@ -32726,7 +32726,7 @@ Plotly.newPlot( "HI_HI_026_EDA_vsTEMP" ,
             ]
         }
     }
-], 
+] 
 {
     "title": "HI HI_026 EDA vsTEMP",
     "showlegend": true,
@@ -32752,7 +32752,5 @@ Plotly.newPlot( "HI_HI_026_EDA_vsTEMP" ,
     },
     "height": 600,
     "width": 900
-});, 
-, 
-Plotly.moveTraces("HI_HI_026_EDA_vsTEMP", [0, 1, 2],[2, 0, 1]);, 
-, 
+}); 
+ 

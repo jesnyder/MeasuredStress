@@ -27676,7 +27676,7 @@ Plotly.newPlot( "HI_HI_020_HR_vsTEMP" ,
             ]
         }
     }
-], 
+] 
 {
     "title": "HI HI_020 HR vsTEMP",
     "showlegend": true,
@@ -27702,7 +27702,5 @@ Plotly.newPlot( "HI_HI_020_HR_vsTEMP" ,
     },
     "height": 600,
     "width": 900
-});, 
-, 
-Plotly.moveTraces("HI_HI_020_HR_vsTEMP", [0, 1, 2],[2, 0, 1]);, 
-, 
+}); 
+ 

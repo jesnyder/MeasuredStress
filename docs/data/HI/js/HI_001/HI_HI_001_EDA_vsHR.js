@@ -1,4 +1,4 @@
-Plotly.newPlot( "HI_HI_001_EDA_vsHR" ,
+Plotly.newPlot( "HI_HI_001_EDA_vsHR" , 
 [
     {
         "x": [
@@ -14990,7 +14990,7 @@ Plotly.newPlot( "HI_HI_001_EDA_vsHR" ,
             ]
         }
     }
-],
+] 
 {
     "title": "HI HI_001 EDA vsHR",
     "showlegend": true,
@@ -15016,4 +15016,5 @@ Plotly.newPlot( "HI_HI_001_EDA_vsHR" ,
     },
     "height": 600,
     "width": 900
-});
+}); 
+ 

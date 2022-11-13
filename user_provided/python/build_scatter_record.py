@@ -38,7 +38,7 @@ def build_scatter_record():
     tasks = [1, 2, 3]
     if 1 in tasks: write_scatter_js()
     if 2 in tasks: write_scatter_js_comparison()
-    if 2 in tasks: write_scatter_html()
+    if 3 in tasks: write_scatter_html()
 
     print("completed build_scatter_record")
 
@@ -142,7 +142,7 @@ def write_scatter_js():
 
                 # write bubble chart layout
                 # https://plotly.com/javascript/bubble-charts/
-                desc_title = study_type + ' ' + record['name'] + ' ' +  sensor + '_' + str(wearable_name)
+                desc_title = '00 ' + study_type + ' ' + record['name'] + ' ' +  sensor + '_' + str(wearable_name)
                 desc_plotname = desc_title.replace(' ', '_')
 
                 bubble_layout = {}
@@ -241,7 +241,7 @@ def write_scatter_js_comparison():
 
                         # write bubble chart layout
                         # https://plotly.com/javascript/bubble-charts/
-                        desc_title = study_type + ' ' + record['name'] + ' ' +  sensor1 + ' vs' + sensor2
+                        desc_title =  study_type + ' ' + record['name'] + ' ' +  sensor1 + ' vs' + sensor2
                         desc_plotname = desc_title.replace(' ', '_')
 
                         bubble_layout = {}
@@ -269,9 +269,9 @@ def write_scatter_js_comparison():
                             f.write(');')
                             f.write(' ' + '\n')
                             f.write(' ' + '\n')
-                            f.write('Plotly.moveTraces("' + desc_plotname + '", [0, 1, 2],[2, 0, 1]);')
-                            f.write(' ' + '\n')
-                            f.write(' ' + '\n')
+                            #f.write('Plotly.moveTraces("' + desc_plotname + '", [0, 1, 2],[2, 0, 1]);')
+                            #f.write(' ' + '\n')
+                            #f.write(' ' + '\n')
                         f.close()
 
 

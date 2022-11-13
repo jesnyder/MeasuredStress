@@ -25,5 +25,8 @@ pythonanalysis:
 # serve the local directory
 .PHONY: web
 web: pythonanalysis
+	git add .
+	git commit -m "auto push"
+	git push origin head
 	python3 -m http.server --directory docs/
 	#python3 -mwebbrowser http://127.0.0.1:8000/report.pdf

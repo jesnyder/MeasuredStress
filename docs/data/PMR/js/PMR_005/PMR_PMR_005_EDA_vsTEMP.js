@@ -83892,7 +83892,7 @@ Plotly.newPlot( "PMR_PMR_005_EDA_vsTEMP" ,
             ]
         }
     }
-], 
+] 
 {
     "title": "PMR PMR_005 EDA vsTEMP",
     "showlegend": true,
@@ -83918,7 +83918,5 @@ Plotly.newPlot( "PMR_PMR_005_EDA_vsTEMP" ,
     },
     "height": 600,
     "width": 900
-});, 
-, 
-Plotly.moveTraces("PMR_PMR_005_EDA_vsTEMP", [0, 1, 2],[2, 0, 1]);, 
-, 
+}); 
+ 

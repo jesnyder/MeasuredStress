@@ -12,6 +12,7 @@ import numpy as np
 import os
 from random import random
 import random
+import re
 import pandas as pd
 import plotly
 from plotly.tools import FigureFactory as ff
@@ -104,41 +105,41 @@ def write_record_html():
 
                 for line in f_old:
 
-                    f_new.write(line)
-
                     if 'LASTRECORD' in line:
 
                         fol_num = float(fol.split('_')[-1])
                         fol_num_last = fol_num - 1
 
-                        if fol_num_last == 1:
-                            line = line.sub('LASTRECORD', ' ')
-                            f_new.write(line)
+                        if fol_num_last > 1:
 
-                        else:
-                            fol_last = fol.split('_')[0] + '_' + str(fol_num_last).zfill(3)
+                            fol_last = fol.split('_')[0] + '_' + str(int(fol_num_last)).zfill(3)
                             fil_dst_last = os.path.join('../' , fol_last, fol_last + '.html')
-                            line = line.sub('LASTRECORD', fil_dst_last)
+                            line = str(line)
+                            print(line)
+                            print(fil_dst_last)
+                            line = re.sub('LASTRECORD', str('"' + fil_dst_last + '"'), line)
                             f_new.write(line)
 
-                    if 'NEXTRECORD' in line:
+                    elif 'NEXTRECORD' in line:
 
                         fol_num_next = float(fol.split('_')[-1]) + 1
-                        fol_next = fol.split('_')[0] + '_' + str(fol_num_next).zfill(3)
+                        fol_next = fol.split('_')[0] + '_' + str(int(fol_num_next)).zfill(3)
                         fil_dst_next = os.path.join('../' , fol_next, fol_next + '.html')
 
-                        if os.path.exists(fil_dst_next) == False:
-                            line = line.sub('NEXTRECORD', ' ')
+                        if os.path.exists(fil_dst_next) == True:
+                            line = str(line)
+                            line = re.sub('NEXTRECORD',  str('"' + fil_dst_next + '"'), line)
                             f_new.write(line)
 
-                        else:
-                            line = line.sub('NEXTRECORD', fil_dst_next)
-                            f_new.write(line)
-
-
-                    if identifier in line:
+                    elif identifier in line:
+                        f_new.write(line)
                         for insert_line in insert_lines:
                             f_new.write(insert_line)
+
+                    else:
+                        f_new.write(line)
+
+
             f_old.close()
             f_new.close()
 

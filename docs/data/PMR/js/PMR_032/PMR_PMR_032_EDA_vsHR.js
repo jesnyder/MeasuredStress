@@ -16836,7 +16836,7 @@ Plotly.newPlot( "PMR_PMR_032_EDA_vsHR" ,
             ]
         }
     }
-], 
+] 
 {
     "title": "PMR PMR_032 EDA vsHR",
     "showlegend": true,
@@ -16862,7 +16862,5 @@ Plotly.newPlot( "PMR_PMR_032_EDA_vsHR" ,
     },
     "height": 600,
     "width": 900
-});, 
-, 
-Plotly.moveTraces("PMR_PMR_032_EDA_vsHR", [0, 1, 2],[2, 0, 1]);, 
-, 
+}); 
+ 
